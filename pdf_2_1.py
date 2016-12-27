@@ -32,4 +32,5 @@ def two_col_to_one(filename):
 for i in filename:
     filename= i.decode('gbk')
     print filename
-    two_col_to_one(filename)
+    if 'pdf' in filename[-4:]:
+        two_col_to_one(filename)
